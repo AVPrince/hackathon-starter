@@ -1,21 +1,37 @@
 .Menu {
-  background-color: rgb(134, 5, 5);
+  background-image: linear-gradient(red, yellow, red);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 1em;
   border-radius: 1em;
+  /* background-image: url("http://3.bp.blogspot.com/-fosHgDrMEkw/UUnrcmZJXJI/AAAAAAAAAfM/KzXFZc58v4g/s640/background.jpg"); */
 }
+
 
 #menu-links {
   display: flex;
   padding-left: 1em;
+  
+}
+.logo{
+  border-radius: ;
+
 }
 
 #menu-links a {
-  padding-right: 0.5em;
-  color: darkblue;
+  text-transform: uppercase;
+  padding-right: 0.1em;
+  color: rgb(115, 115, 224);
   text-decoration: underline;
   cursor: pointer;
+  
 }
+.Messages {
+  color: blue;
+}
+
+
+
+
 
