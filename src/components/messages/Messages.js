@@ -43,6 +43,14 @@ class Messages extends React.Component {
     })
   }
 
+  likeMessageHandler = (messageId) => {
+    this.props.addLike(messageId).then(() => {
+      this.fetchMessages();
+    })
+  }
+  
+  
+
   handleChange = (event) => {
     let data = {...this.state};
    
@@ -57,7 +65,17 @@ class Messages extends React.Component {
       display = this.state.messages.map((value) => {
         console.log(value);
         return (
-          <li key={value.id}>{value.text} <button onClick={() => this.deleteMessageHandler(value.id)}>Delete</button></li>
+
+          <li key={value.id}>
+            {value.text} 
+            <button onClick={() => this.likeMessageHandler(value.id)}> 
+              Like: {value.likes.length}
+            </button>
+            <button onClick={() => this.deleteMessageHandler(value.id)}>
+              Delete
+            </button>
+            </li>
+          
         )
       })
     }
