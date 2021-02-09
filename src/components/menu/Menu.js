@@ -12,6 +12,7 @@ class Menu extends React.Component {
   render() {
     return (
       <div className="Menu">
+        <img id="logo"src="https://webneel.com/sites/default/files/images/download/thumb/Aggressive%20fire.jpg" />
         <h1>Flame Thrower</h1>
         {this.props.isAuthenticated && (
           <div id="menu-links">
