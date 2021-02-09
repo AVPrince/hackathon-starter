@@ -1,11 +1,11 @@
 .Menu {
-  background-image: linear-gradient(red, yellow, red);
+  background-color: rgb(76, 76, 110);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 1em;
   border-radius: 1em;
-  /* background-image: url("http://3.bp.blogspot.com/-fosHgDrMEkw/UUnrcmZJXJI/AAAAAAAAAfM/KzXFZc58v4g/s640/background.jpg"); */
+ 
 }
 
 
@@ -14,10 +14,7 @@
   padding-left: 1em;
   
 }
-.logo{
-  border-radius: ;
 
-}
 
 #menu-links a {
   text-transform: uppercase;
@@ -25,13 +22,21 @@
   color: rgb(115, 115, 224);
   text-decoration: underline;
   cursor: pointer;
-  
 }
 .Messages {
   color: blue;
 }
 
-
-
-
-
+#logo {
+  width:50px;
+  height: 50px;
+  border-radius: 25px;
+  display: flex;
+  
+}
+a:link{
+  color:white;
+}
+h1{
+  color:rgb(138, 14, 14);
+}
